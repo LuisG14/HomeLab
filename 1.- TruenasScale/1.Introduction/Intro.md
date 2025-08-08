@@ -1,33 +1,32 @@
-# Proyecto TrueNAS Scale
+# TrueNAS Scale Project
 
-Este repositorio documenta la instalación, configuración y aplicaciones que uso en mi servidor con **TrueNAS Scale**.  
-El objetivo es tener un sistema de almacenamiento y servicios autohosteados, estable y escalable, que me permita administrar datos y aplicaciones de forma sencilla, y que sirva como base para mi home lab en constante crecimiento y aprendizaje de distintas herramientas.
+This repository documents the installation, configuration, and applications I use on my **TrueNAS Scale** server.  
+The goal is to have a stable and scalable self-hosted storage and services system that allows me to manage data and applications easily, and that serves as the foundation for my home lab, which is in constant growth and focused on learning new tools.
 
----
+## Why TrueNAS Scale?
+I chose **TrueNAS Scale** because:
+- It supports installing a wide variety of applications, from multimedia to productivity and development tools.
+- With **Nextcloud**, I can offer my family an easy way to upload images and videos to their own partition within my storage space.
+- Its administration system allows me to **partition and organize disks** flexibly, assigning space according to specific needs.
+- It includes **Docker**, giving me the freedom to deploy custom services.
+- It is perfect for my home lab, aiming for constant growth and learning with different tools.
 
-## ¿Por qué TrueNAS Scale?
-Elegí **TrueNAS Scale** porque:
-- Permite instalar una gran variedad de aplicaciones, desde multimedia hasta herramientas de productividad y desarrollo.
-- Con **Nextcloud** puedo ofrecer a mi familia una forma fácil de subir imágenes y videos a su propia partición dentro de mi espacio de almacenamiento.
-- Su sistema de administración me permite **particionar y organizar discos** de manera flexible, asignando espacio según las necesidades.
-- Incluye **Docker**, lo que me da la libertad de implementar servicios personalizados.
-- Es perfecto para mi home lab, buscando un constante crecimiento y aprendizaje de distintas herramientas.
+## Problems it solves
+Before using TrueNAS Scale:
+- My family used different devices to back up data:
+  - My father used a laptop, but ran out of space, so I had to lend him storage.
+  - My mother used an external hard drive that I knew would eventually fail, and I didn’t want her to lose photos and videos she has kept for over **26 years**.
+- I was also running out of space on all my devices, plus a nearly full external hard drive, which would have forced me to pay for cloud storage (something I wanted to avoid).
 
----
+With TrueNAS Scale I now have:
+- A **centralized NAS** where we can all store data securely.
+- Simple access for my family and friends, with dedicated partitions for each.
+- Self-hosted applications such as Plex, Nextcloud, Ollama, and more.
+- Automatic backups and secure remote access via Tailscale.
 
-## Problemas que soluciona
-Antes de usar TrueNAS Scale:
-- Mi familia usaba distintos dispositivos para respaldar datos:
-  - Mi papá utilizaba una laptop, pero se quedó sin espacio y tuve que prestarle almacenamiento.
-  - Mi mamá usaba un disco duro que sabía que eventualmente fallaría, y no quería que perdiera fotos y videos que tiene desde hace más de **26 años**.
-- Yo mismo me estaba quedando sin espacio en todos mis dispositivos, además de un disco duro casi lleno, lo que me iba a obligar a pagar por almacenamiento en la nube (algo que quería evitar).
+## Repository structure
+- **Config and Specs** → Initial and technical configurations (notifications, SSH, disks, dashboard).
+- **Apps** → Documentation and configuration for each installed application.
+- **Future** → Plans and experiments for the future (external backups, VMs, etc.).
 
-## Con TrueNAS Scale ahora tengo:
-- Un **NAS centralizado** donde todos podemos guardar datos de forma segura.
-- Acceso sencillo para mi familia y amigos, con particiones dedicadas para cada uno.
-- Aplicaciones autohosteadas como Plex, Nextcloud, Ollama, etc.
-- Backups automáticos y acceso remoto seguro mediante Tailscale.
-
----
-
-> Este proyecto sigue en desarrollo y crecerá conforme agregue más servicios a mi entorno y adquiera experiencia en distintas tecnologías.
+> This project is still in development and will continue to grow as I add more services to my environment and gain experience with different technologies.
